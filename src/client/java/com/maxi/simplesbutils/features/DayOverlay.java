@@ -22,7 +22,6 @@ public class DayOverlay {
     }
 
     private void render(DrawContext drawContext) {
-        // Si no estamos en Crystal Hollows, dormimos inmediatamente (Cero recursos)
         if (!enabled)
             return;
 
@@ -31,7 +30,6 @@ public class DayOverlay {
             return;
         }
 
-        // Lógica de Caché
         long worldTime = client.world.getTimeOfDay();
         long currentDay = worldTime / 24000L;
 
@@ -40,7 +38,6 @@ public class DayOverlay {
             cachedText = "Day: " + cachedDay;
         }
 
-        // Dibujado
         TextRenderer textRenderer = client.textRenderer;
         int width = client.getWindow().getScaledWidth();
         int textWidth = textRenderer.getWidth(cachedText);

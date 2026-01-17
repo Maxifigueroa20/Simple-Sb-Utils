@@ -41,8 +41,7 @@ dependencies {
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 	
 	// Hypixel Mod API
-	modImplementation "net.hypixel:mod-api:1.0.1"
-	include "net.hypixel:mod-api:1.0.1"
+    modImplementation "net.hypixel:mod-api:1.0.1"
 }
 
 processResources {
